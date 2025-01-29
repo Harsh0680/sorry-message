@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Sorry Message </title>
+  <title>Sorry Message</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -29,6 +29,10 @@
     function showImage() {
       document.getElementById('image').style.display = 'block';
     }
+
+    window.onload = function() {
+      document.getElementById('audio').play();
+    }
   </script>
 </head>
 <body>
@@ -36,6 +40,7 @@
   <h1>I love you, Anshika, and I'm sorry for all the mistakes I've made. Please forgive me.</h1>
   <div class="heart" onclick="showImage()">❤️</div>
   <img id="image" src="LAADO.png.png" alt="Sorry Image">
+  <audio id="audio" src="tu hi.mp3" type="audio/mp3"></audio>
 
 </body>
 </html>
